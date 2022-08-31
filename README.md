@@ -10,4 +10,4 @@ Service
 Model
 Veuillez trouver ci-joint les captures d’écran suivante :
 
-![komutel](https://github.com/askriamani/Gestion-Contact_Komutel_BO.git/formulaire.png)
+![komutel](https://github.com/askriamani/Gestion-Contact_Komutel_BO.git/formulaire.PNG)
