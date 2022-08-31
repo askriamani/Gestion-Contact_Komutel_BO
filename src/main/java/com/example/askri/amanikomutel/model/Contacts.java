@@ -22,7 +22,7 @@ public class Contacts {
     @Id
     @GeneratedValue
     private Long id;
-    private String Nom;
+    private String nom;
     private  String adresse;
     private  String ville;
     private  String pays;

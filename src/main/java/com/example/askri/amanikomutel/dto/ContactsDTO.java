@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class ContactsDTO {
     private Long id;
-    private String Nom;
+    private String nom;
     private  String adresse;
     private  String ville;
     private  String pays;
