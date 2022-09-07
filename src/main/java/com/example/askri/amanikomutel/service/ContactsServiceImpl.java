@@ -6,6 +6,8 @@ import com.example.askri.amanikomutel.dto.ContactsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("contactsservice")
 public class ContactsServiceImpl implements ContactsService {
 
@@ -24,4 +26,10 @@ public class ContactsServiceImpl implements ContactsService {
     public void deleteById(String id) {
 
     }
+
+    @Override
+    public List<ContactsDTO> findAll() {
+        return contactsMapper.asDtoList(contactsDAO.findAll());
+    }
+
 }

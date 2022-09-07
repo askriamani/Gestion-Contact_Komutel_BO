@@ -5,6 +5,8 @@ import com.example.askri.amanikomutel.dto.ContactsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("contact")
 public class ContactsController {
@@ -22,6 +24,10 @@ public class ContactsController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable String id){
         contactsService.deleteById(id);
+    }
+    @GetMapping("/all")
+    public List<ContactsDTO> getAllContact() {
+        return contactsService.findAll();
     }
 
 }
